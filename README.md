@@ -630,7 +630,8 @@ HTML("""
 
 
 
+### Discussion
 
-```python
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-```
+My solution is having difficulties when the color of the road and the lane lines are very similar, or if there's a lot of shadows over the lines. I could try to tweak the thresholding. I tried this a little bit, but when if fixed one condition turned another worse. Or I could try some completely different method to segment the image with regards to the lane lines, or a combination of the two. Also If you can see one line clearly you know the rough estimate for the other, right now my approach identifies one line separately, having information about the other line as well, and assigning a probability to how certain you are this line is correct might help.
